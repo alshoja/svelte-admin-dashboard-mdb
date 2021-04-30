@@ -4,9 +4,10 @@ import Login from './components/pages/login.svelte';
 import Profile from './components/pages/profile.svelte';
 import Table from './components/pages/tables.svelte';
 import Forms from './components/pages/forms.svelte';
+import _404 from './components/pages/_404.svelte';
 
 function userIsAdmin() {
-  //check if user is admin and returns true or false
+  return false;
 }
 
 const routes = [
@@ -17,7 +18,11 @@ const routes = [
   {
     name: 'home',
     component: Dashboard,
-    layout: Layout
+    layout: Layout,
+    onlyIf: {
+      guard: userIsAdmin,
+      redirect: '/s'
+    }
   },
   {
     name: 'forms',
@@ -33,24 +38,12 @@ const routes = [
     name: 'profile',
     component: Profile,
     layout: Layout
+  },
+  {
+    name: '404',
+    path: '404',
+    component: _404
   }
-
-  // {
-  //   name: 'admin',
-  //   component: AdminLayout,
-  //   onlyIf: { guard: userIsAdmin, redirect: '/login' },
-  //   nestedRoutes: [
-  //     { name: 'index', component: AdminIndex },
-  //     {
-  //       name: 'employees',
-  //       component: '',
-  //       nestedRoutes: [
-  //         { name: 'index', component: EmployeesIndex },
-  //         { name: 'show/:id', component: EmployeesShow },
-  //       ],
-  //     },
-  //   ],
-  // },
 ];
 
 export {routes};
