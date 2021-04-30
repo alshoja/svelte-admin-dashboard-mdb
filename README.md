@@ -1,5 +1,5 @@
 #  MDBSvelte Dashboard with SPA-Router
-The original sah board that was created by saurav was using Sapper Framework having its on Router  ,this version contain SPA Router with Core Svelte
+The original Dashboard that was created by saurav was using Sapper Framework having its on Router  ,this version contain SPA Router with Core Svelte
 -This was Just a reformed version of original one.
 
 A dashboard made using [mdbsvelte](https://saurav.tech/mdbsvelte)
