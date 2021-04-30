@@ -4,6 +4,11 @@ The original Dashboard that was created by saurav was using Sapper Framework hav
 
 Router [mdbsvelte](https://www.npmjs.com/package/svelte-router-spa)
 
+* Features
+- Login Page
+- Router SPA with Middleware Guard
+- Dashaboard 
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte-dashboard.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte-dashboard?ref=badge_shield)
 
 ### Getting Started
