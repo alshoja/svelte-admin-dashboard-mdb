@@ -1,7 +1,7 @@
 <script>
-  import SideNavigation from "../components/SideNavigation.svelte";
-  import TopNavigation from "../components/TopNavigation.svelte";
-  import Footer from "../components/Footer.svelte";
+  import SideNavigation from "../components/core/SideNavigation.svelte";
+  import TopNavigation from "../components/core/TopNavigation.svelte";
+  import Footer from "../components/core/Footer.svelte";
 
   let isOpen = true;
   export let segment;

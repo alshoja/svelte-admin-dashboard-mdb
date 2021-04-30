@@ -1,8 +1,8 @@
 <script>
-  import SideNavigation from "../src/components/SideNavigation.svelte";
-  import TopNavigation from "../src/components/TopNavigation.svelte";
-  import Footer from "../src/components/Footer.svelte";
-  import Index from "../src/routes/index.svelte";
+  import SideNavigation from "../src/components/core/SideNavigation.svelte";
+  import TopNavigation from "../src/components/core/TopNavigation.svelte";
+  import Footer from "./components/core/Footer.svelte";
+  import Index from "../src/components/index.svelte";
 
   let isOpen = true;
   export let segment;
