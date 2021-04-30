@@ -12,6 +12,7 @@
   import MDBMask from 'mdbsvelte/src/MDBMask.svelte'
   import MDBView from 'mdbsvelte/src/MDBView.svelte'
 
+
 </script>
 <MDBRow class="justify-content-center">
   <MDBCol sm="12" md="6" lg="3" class="mb-5">
