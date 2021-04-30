@@ -2,7 +2,7 @@
 The original Dashboard that was created by saurav was using Sapper Framework having its on Router  ,this version contain SPA Router with Core Svelte
 -This was Just a reformed version of original one.
 
-A dashboard made using [mdbsvelte](https://saurav.tech/mdbsvelte)
+Router [mdbsvelte](https://www.npmjs.com/package/svelte-router-spa)
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte-dashboard.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSauravKanchan%2Fmdbsvelte-dashboard?ref=badge_shield)
 
