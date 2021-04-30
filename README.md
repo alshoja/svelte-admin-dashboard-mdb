@@ -1,7 +1,6 @@
 #  MDBSvelte Dashboard with SPA-Router
 A dashboard made using base svelte components not sapper , contain SPA Router
 
-#  MDBSvelte Dashboard
 A dashboard made using [mdbsvelte](https://saurav.tech/mdbsvelte)
 
 ![preview](preview.png)
