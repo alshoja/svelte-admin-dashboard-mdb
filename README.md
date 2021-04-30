@@ -4,7 +4,7 @@ The original Dashboard that was created by saurav was using Sapper Framework hav
 
 Router [mdbsvelte](https://www.npmjs.com/package/svelte-router-spa)
 
-* Features
+## Features
 - Login Page
 - Router SPA with Middleware Guard
 - Dashaboard 
