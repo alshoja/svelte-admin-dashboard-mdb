@@ -1,8 +1,8 @@
 <script>
   import {Route} from 'svelte-router-spa';
-  import SideNavigation from '../components/core/SideNavigation.svelte';
-  import TopNavigation from '../components/core/TopNavigation.svelte';
-  import Footer from '../components/core/Footer.svelte';
+  import SideNavigation from '../components/_shared/SideNavigation.svelte';
+  import TopNavigation from '../components/_shared/TopNavigation.svelte';
+  import Footer from '../components/_shared/Footer.svelte';
 
   export let currentRoute;
   export let segment;

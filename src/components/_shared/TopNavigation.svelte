@@ -26,17 +26,8 @@
   <MDBNavbarToggler on:click = { toggle } />
   <MDBCollapse isOpen = { collapse } navbar expand="md" on:update={handleUpdate}>
     <MDBNavbarNav left>
-      <MDBNavItem active>
+      <MDBNavItem >
         <MDBNavLink to="#">Home</MDBNavLink>
-      </MDBNavItem>
-      <MDBNavItem>
-        <a rel="noopener noreferrer" class="nav-link Ripple-parent" href="https://saurav.tech/mdbsvelte" target="_blank">About MDB</a>
-      </MDBNavItem>
-      <MDBNavItem>
-        <a rel="noopener noreferrer" class="nav-link Ripple-parent" href="https://saurav.tech/mdbsvelte" target="_blank">Free download</a>
-      </MDBNavItem>
-      <MDBNavItem>
-        <a rel="noopener noreferrer"  class="nav-link Ripple-parent" href="https://saurav.tech/mdbsvelte" target="_blank">Free tutorials</a>
       </MDBNavItem>
     </MDBNavbarNav>
     <MDBNavbarNav right>
