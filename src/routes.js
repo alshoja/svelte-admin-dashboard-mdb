@@ -1,9 +1,9 @@
-import PublicLayout from './components/public_layout.svelte';
-import Dashboard from './components/dashboard.svelte';
-import Login from './components/login.svelte';
-import Profile from './components/profile.svelte';
-import Table from './components/tables.svelte';
-import Forms from './components/forms.svelte';
+import Layout from './components/_layout.svelte';
+import Dashboard from './components/pages/dashboard.svelte';
+import Login from './components/pages/login.svelte';
+import Profile from './components/pages/profile.svelte';
+import Table from './components/pages/tables.svelte';
+import Forms from './components/pages/forms.svelte';
 
 function userIsAdmin() {
   //check if user is admin and returns true or false
@@ -17,22 +17,22 @@ const routes = [
   {
     name: 'home',
     component: Dashboard,
-    layout: PublicLayout
+    layout: Layout
   },
   {
     name: 'forms',
     component: Forms,
-    layout: PublicLayout
+    layout: Layout
   },
   {
     name: 'table',
     component: Table,
-    layout: PublicLayout
+    layout: Layout
   },
   {
     name: 'profile',
     component: Profile,
-    layout: PublicLayout
+    layout: Layout
   }
 
   // {
