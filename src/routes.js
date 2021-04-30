@@ -7,7 +7,7 @@ import Forms from './components/pages/forms.svelte';
 import _404 from './components/pages/_404.svelte';
 
 function userIsAdmin() {
-  return false;
+  return true;
 }
 
 const routes = [
@@ -21,7 +21,7 @@ const routes = [
     layout: Layout,
     onlyIf: {
       guard: userIsAdmin,
-      redirect: '/s'
+      redirect: '/'
     }
   },
   {
