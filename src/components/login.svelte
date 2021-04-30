@@ -8,6 +8,7 @@
   import {Navigate} from 'svelte-router-spa';
 </script>
 
+
 <MDBContainer fluid>
   <MDBRow>
     <div class="container">
