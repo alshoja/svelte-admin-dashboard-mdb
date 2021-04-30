@@ -2,10 +2,11 @@
   export let segment;
   export let isOpen = true;
 
-  import MDBListGroup from "mdbsvelte/src/MDBListGroup.svelte";
-  import MDBListGroupItem from "mdbsvelte/src/MDBListGroupItem.svelte";
-  import MDBIcon from "mdbsvelte/src/MDBIcon.svelte";
-  import MDBNavLink from "mdbsvelte/src/MDBNavLink.svelte";
+  import MDBListGroup from 'mdbsvelte/src/MDBListGroup.svelte';
+  import MDBListGroupItem from 'mdbsvelte/src/MDBListGroupItem.svelte';
+  import MDBIcon from 'mdbsvelte/src/MDBIcon.svelte';
+  import MDBNavLink from 'mdbsvelte/src/MDBNavLink.svelte';
+  import {Navigate} from 'svelte-router-spa';
 </script>
 
 {#if isOpen}
@@ -14,51 +15,47 @@
       <img alt="MDB React Logo" class="img-fluid" src="mdbsvelte.png" />
     </a>
     <MDBListGroup class="list-group-flush">
-      <MDBNavLink
-        href="/"
-        active={segment === undefined}
-        activeClassName="activeClass">
-        <MDBListGroupItem>
-          <MDBIcon icon="chart-pie" class="mr-3" />
-          <span>Dashboard</span>
-        </MDBListGroupItem>
+      <MDBNavLink active={segment === undefined} activeClassName="activeClass">
+        <Navigate to="home">
+          <MDBListGroupItem>
+            <MDBIcon icon="chart-pie" class="mr-3" />
+            <span>Dashboard</span>
+          </MDBListGroupItem>
+        </Navigate>
       </MDBNavLink>
+
       <MDBNavLink
-        href="/profile"
-        active={segment === 'profile'}
-        activeClassName="activeClass">
-        <MDBListGroupItem>
-          <MDBIcon icon="user" class="mr-3" />
-          <span>Profile</span>
-        </MDBListGroupItem>
-      </MDBNavLink>
-      <MDBNavLink
-        href="/tables"
         active={segment === 'tables'}
         activeClassName="activeClass">
-        <MDBListGroupItem>
-          <MDBIcon icon="table" class="mr-3" />
-          <span>Tables</span>
-        </MDBListGroupItem>
+        <Navigate to="table">
+          <MDBListGroupItem>
+            <MDBIcon icon="table" class="mr-3" />
+            <span>Tables</span>
+          </MDBListGroupItem>
+        </Navigate>
       </MDBNavLink>
+
       <MDBNavLink
-        href="/forms"
-        active={segment === 'forms'}
-        activeClassName="activeClass">
+      active={segment === 'forms'}
+      activeClassName="activeClass">
+      <Navigate to="forms">
         <MDBListGroupItem>
           <MDBIcon icon="file" class="mr-3" />
           <span>Forms</span>
         </MDBListGroupItem>
-      </MDBNavLink>
-      <MDBNavLink
-      href="/forms"
-      active={segment === 'formss'}
-      activeClassName="activeClass">
-      <MDBListGroupItem>
-        <MDBIcon icon="file" class="mr-3" />
-        <span>Exa</span>
-      </MDBListGroupItem>
+      </Navigate>
     </MDBNavLink>
+    <MDBNavLink
+    active={segment === 'forms'}
+    activeClassName="activeClass">
+    <Navigate to="profile">
+      <MDBListGroupItem>
+        <MDBIcon icon="user" class="mr-3" />
+        <span>Profile</span>
+      </MDBListGroupItem>
+    </Navigate>
+  </MDBNavLink>
+  
     </MDBListGroup>
   </div>
 {/if}

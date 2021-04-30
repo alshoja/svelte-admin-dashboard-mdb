@@ -1,6 +1,9 @@
-import PublicLayout from './components/public_layout.svelte'
-import index from './components/index.svelte'
-import Login from './components/login.svelte'
+import PublicLayout from './components/public_layout.svelte';
+import Dashboard from './components/dashboard.svelte';
+import Login from './components/login.svelte';
+import Profile from './components/profile.svelte';
+import Table from './components/tables.svelte';
+import Forms from './components/forms.svelte';
 
 function userIsAdmin() {
   //check if user is admin and returns true or false
@@ -9,9 +12,29 @@ function userIsAdmin() {
 const routes = [
   {
     name: '/',
-    component: Login,
+    component: Login
   },
-  { name: 'login', component: index, layout: PublicLayout },
+  {
+    name: 'home',
+    component: Dashboard,
+    layout: PublicLayout
+  },
+  {
+    name: 'forms',
+    component: Forms,
+    layout: PublicLayout
+  },
+  {
+    name: 'table',
+    component: Table,
+    layout: PublicLayout
+  },
+  {
+    name: 'profile',
+    component: Profile,
+    layout: PublicLayout
+  }
+
   // {
   //   name: 'admin',
   //   component: AdminLayout,
@@ -28,6 +51,6 @@ const routes = [
   //     },
   //   ],
   // },
-]
+];
 
-export { routes }
+export {routes};
